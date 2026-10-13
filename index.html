@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#123c35">
+<title>VU Books & Handouts | Order Online</title>
+<style>
+:root{--green:#123c35;--green2:#1d6655;--gold:#e9b95b;--cream:#f7f5ef;--ink:#172b27;--muted:#63736e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.7}
+a{color:inherit;text-decoration:none}.topbar{background:#0c2d28;color:#eaf4ef;padding:9px 5%;font-size:13px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+header{padding:18px 5%;display:flex;justify-content:space-between;align-items:center;gap:20px;background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 3px 18px #123c3510}
+.brand{display:flex;align-items:center;gap:12px}.logo{width:46px;height:46px;border-radius:14px;background:var(--green);color:var(--gold);display:grid;place-items:center;font-size:24px;font-weight:800}.brand strong{display:block;font-size:18px;color:var(--green)}.brand small{color:var(--muted);font-size:12px}
+nav{display:flex;gap:22px;font-size:14px;font-weight:650}nav a:hover{color:var(--green2)}
+.hero{background:radial-gradient(circle at 12% 15%,#2a7561 0,transparent 28%),linear-gradient(125deg,#0b2c27,#164b40 70%,#1d6655);color:#fff;padding:70px 5% 76px;overflow:hidden;position:relative}
+.hero-inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:45px}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--gold);font-weight:750;font-size:13px;letter-spacing:.3px}.hero h1{font-size:clamp(32px,5vw,54px);line-height:1.25;margin:16px 0}.hero p{color:#d9e8e2;font-size:17px;max-width:590px;margin:0 0 26px}.cta{display:inline-flex;background:var(--gold);color:#18372f;font-weight:800;padding:13px 22px;border-radius:12px;align-items:center;gap:9px;box-shadow:0 8px 22px #0002}.cta:hover{transform:translateY(-1px)}.hero-note{font-size:13px;color:#c4d8d0;margin-top:15px}
+.book-stack{min-height:260px;display:grid;place-items:center;position:relative}.book{width:190px;height:230px;border-radius:9px 16px 16px 9px;background:#f8f0d9;color:var(--green);padding:24px 18px;box-shadow:12px 18px 0 #091e1a55,0 25px 50px #0004;transform:rotate(-7deg);position:relative;border-left:10px solid #d6b66f}.book:before{content:"";position:absolute;inset:12px;border:1px solid #c7b783;border-radius:3px}.book b{display:block;font-size:24px;line-height:1.2;margin-top:22px;position:relative}.book span{display:block;font-size:12px;margin-top:14px;position:relative}.book2{position:absolute;width:165px;height:205px;background:#dce9df;left:calc(50% + 32px);top:32px;transform:rotate(11deg);border-color:#a2bca9;z-index:0}.book2 b{font-size:19px;margin-top:20px}.book{z-index:1}
+.wrap{max-width:1120px;margin:auto;padding:54px 5%}.section-head{text-align:center;margin-bottom:28px}.section-head .mini{color:var(--green2);font-weight:800;font-size:13px}.section-head h2{margin:6px 0;font-size:30px;color:var(--green)}.section-head p{margin:0;color:var(--muted)}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature{background:#fff;border:1px solid #e6e9e2;padding:23px;border-radius:18px;box-shadow:0 7px 24px #123c3507}.feature .ico{width:44px;height:44px;border-radius:13px;background:#eaf3ed;display:grid;place-items:center;font-size:22px}.feature h3{margin:12px 0 4px;color:var(--green);font-size:17px}.feature p{margin:0;color:var(--muted);font-size:14px}
+.order-area{background:#edf2ec}.order-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:26px;align-items:start}.order-info{background:var(--green);color:#fff;border-radius:22px;padding:28px;position:sticky;top:105px}.order-info h3{font-size:25px;margin:0 0 8px}.order-info p{color:#d1e2db;margin:0 0 20px}.order-info ul{padding-right:20px;color:#e4eee9}.order-info li{margin:9px 0}.contact-pill{display:inline-block;background:#ffffff15;border:1px solid #ffffff30;padding:10px 13px;border-radius:10px;margin-top:12px;direction:ltr}
+form{background:#fff;border:1px solid #e2e8e0;border-radius:22px;padding:28px;box-shadow:0 12px 35px #123c3509}.form-title{margin:0 0 5px;color:var(--green);font-size:23px}.form-sub{margin:0 0 22px;color:var(--muted);font-size:14px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}label{font-size:14px;font-weight:750}input,select,textarea{width:100%;border:1px solid #d8e0d8;background:#fbfcfa;border-radius:10px;padding:12px 13px;font:inherit;font-size:14px;color:var(--ink);outline:none}input:focus,select:focus,textarea:focus{border-color:var(--green2);box-shadow:0 0 0 3px #1d66551a}textarea{min-height:92px;resize:vertical}.hint{font-size:12px;color:var(--muted)}.submit{width:100%;border:0;border-radius:12px;background:#16834b;color:white;padding:14px;font:inherit;font-weight:850;cursor:pointer;margin-top:18px}.submit:hover{background:#116d3e}.privacy{font-size:12px;text-align:center;color:var(--muted);margin:10px 0 0}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.step{text-align:center;padding:10px}.num{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;margin:0 auto 12px;background:var(--green);color:var(--gold);font-weight:900;font-size:20px}.step h3{margin:0 0 4px;color:var(--green)}.step p{margin:0;color:var(--muted);font-size:14px}
+footer{background:#0b2924;color:#dce9e3;padding:30px 5%;text-align:center}footer strong{font-size:18px;color:white}footer p{margin:4px 0;color:#b8ccc3;font-size:13px}.whatsapp-float{position:fixed;bottom:18px;left:18px;background:#16834b;color:white;padding:12px 17px;border-radius:999px;font-weight:800;box-shadow:0 8px 25px #0003;z-index:20}
+@media(max-width:760px){nav{display:none}.hero{padding:48px 5%}.hero-inner{grid-template-columns:1fr;gap:20px}.book-stack{min-height:220px}.book{transform:scale(.85) rotate(-7deg)}.book2{transform:scale(.85) rotate(11deg)}.features,.steps{grid-template-columns:1fr}.order-grid{grid-template-columns:1fr}.order-info{position:static}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.wrap{padding:42px 5%}.section-head h2{font-size:26px}}
+</style>
+</head>
+<body>
+<div class="topbar"><span>📚 ورچوئل یونیورسٹی کی کتابیں اور ہینڈ آؤٹس</span><span>🚚 پاکستان بھر میں ڈیلیوری · 💵 کیش آن ڈیلیوری</span></div>
+<header>
+  <a class="brand" href="#home"><div class="logo">VU</div><div><strong>VU Books & Handouts</strong><small>Study smart. Learn better.</small></div></a>
+  <nav><a href="#home">ہوم</a><a href="#services">ہماری سہولیات</a><a href="#order">آرڈر کریں</a><a href="#how">طریقۂ کار</a></nav>
+</header>
+<main>
+<section class="hero" id="home"><div class="hero-inner">
+  <div><span class="eyebrow">✦ VU STUDENTS کے لیے آسان سہولت</span><h1>آپ کی پڑھائی،<br>اب مزید آسان!</h1><p>ورچوئل یونیورسٹی کی مطلوبہ کتابیں اور ہینڈ آؤٹس مناسب قیمت پر پرنٹ کروائیں۔ گھر بیٹھے آرڈر کریں اور پاکستان بھر میں ڈیلیوری حاصل کریں۔</p><a class="cta" href="#order">ابھی آرڈر کریں <span>←</span></a><div class="hero-note">✓ مناسب قیمت &nbsp; ✓ کیش آن ڈیلیوری &nbsp; ✓ آسان آرڈر</div></div>
+  <div class="book-stack" aria-label="VU books illustration"><div class="book book2"><b>VU<br>HANDOUTS</b><span>Study material</span></div><div class="book"><b>VIRTUAL<br>UNIVERSITY</b><span>BOOKS & HANDOUTS</span><span style="margin-top:35px">LEARN • PREPARE • SUCCEED</span></div></div>
+</div></section>
+<section class="wrap" id="services"><div class="section-head"><span class="mini">WHY CHOOSE US</span><h2>ہماری سہولیات</h2><p>آپ کے تعلیمی مواد کے لیے آسان اور قابلِ اعتماد آرڈر سروس</p></div>
+<div class="features">
+ <article class="feature"><div class="ico">📚</div><h3>کتابیں اور ہینڈ آؤٹس</h3><p>اپنے مطلوبہ سبجیکٹ کوڈز کے مطابق پرنٹ شدہ مواد آرڈر کریں۔</p></article>
+ <article class="feature"><div class="ico">🚚</div><h3>پاکستان بھر میں ڈیلیوری</h3><p>اپنا آرڈر گھر پر وصول کریں، دور جانے کی ضرورت نہیں۔</p></article>
+ <article class="feature"><div class="ico">💵</div><h3>کیش آن ڈیلیوری</h3><p>آرڈر وصول ہونے پر ادائیگی کی سہولت دستیاب ہے۔</p></article>
+</div></section>
+<section class="order-area" id="order"><div class="wrap"><div class="section-head"><span class="mini">PLACE YOUR ORDER</span><h2>اپنا آرڈر بک کروائیں</h2><p>نیچے دی گئی معلومات پُر کریں، پھر واٹس ایپ پر آرڈر بھیج دیں۔</p></div>
+<div class="order-grid">
+<aside class="order-info"><h3>آرڈر کرنا بہت آسان ہے!</h3><p>اپنی معلومات اور سبجیکٹ کوڈز درج کریں۔ آپ کا آرڈر واٹس ایپ میسج کی صورت میں تیار ہو جائے گا۔</p><ul><li>اپنی کتاب یا ہینڈ آؤٹ منتخب کریں</li><li>ڈیلیوری کی مکمل معلومات درج کریں</li><li>واٹس ایپ پر آرڈر بھیجیں</li><li>قیمت اور ڈیلیوری کی تصدیق حاصل کریں</li></ul><div class="contact-pill">WhatsApp: 03113667510</div></aside>
+<form id="orderForm">
+<h3 class="form-title">Order Details</h3><p class="form-sub">تمام ضروری معلومات درست درج کریں۔</p>
+<div class="fields">
+<div class="field"><label for="name">آپ کا نام *</label><input id="name" name="name" placeholder="پورا نام لکھیں" required></div>
+<div class="field"><label for="phone">موبائل نمبر *</label><input id="phone" name="phone" type="tel" placeholder="03XXXXXXXXX" required></div>
+<div class="field"><label for="city">شہر *</label><input id="city" name="city" placeholder="مثلاً پشاور، اسلام آباد" required></div>
+<div class="field"><label for="material">کیا آرڈر کرنا ہے؟ *</label><select id="material" name="material" required><option value="">منتخب کریں</option><option>کتابیں (Books)</option><option>ہینڈ آؤٹس (Handouts)</option><option>کتابیں اور ہینڈ آؤٹس دونوں</option></select></div>
+<div class="field full"><label for="codes">سبجیکٹ کوڈز *</label><input id="codes" name="codes" placeholder="مثلاً MTH302, MGT503, PSY101" required><span class="hint">ایک سے زیادہ کوڈز ہوں تو کاما لگا کر لکھیں۔</span></div>
+<div class="field"><label for="quantity">کتنے سبجیکٹس؟</label><select id="quantity" name="quantity"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6 یا زیادہ</option></select></div>
+<div class="field"><label for="binding">پرنٹنگ کی قسم</label><select id="binding" name="binding"><option>عام پرنٹ</option><option>سرپل بائنڈنگ (اگر دستیاب ہو)</option><option>پہلے قیمت معلوم کرنی ہے</option></select></div>
+<div class="field full"><label for="address">مکمل ڈیلیوری ایڈریس *</label><textarea id="address" name="address" placeholder="گھر نمبر، گلی، علاقہ اور شہر درج کریں" required></textarea></div>
+<div class="field full"><label for="notes">اضافی ہدایات (اختیاری)</label><textarea id="notes" name="notes" placeholder="اگر کوئی خاص ہدایت ہو تو یہاں لکھیں"></textarea></div>
+</div>
+<button class="submit" type="submit">📲 واٹس ایپ پر آرڈر بھیجیں</button>
+<p class="privacy">آرڈر بھیجنے سے پہلے واٹس ایپ میں اپنی تفصیلات چیک کر لیں۔</p>
+</form></div></div></section>
+<section class="wrap" id="how"><div class="section-head"><span class="mini">HOW IT WORKS</span><h2>آرڈر کرنے کا طریقہ</h2></div><div class="steps">
+<div class="step"><div class="num">1</div><h3>تفصیلات درج کریں</h3><p>نام، شہر، ایڈریس اور سبجیکٹ کوڈز لکھیں۔</p></div>
+<div class="step"><div class="num">2</div><h3>واٹس ایپ پر بھیجیں</h3><p>بٹن دبائیں اور تیار شدہ آرڈر میسج بھیج دیں۔</p></div>
+<div class="step"><div class="num">3</div><h3>آرڈر وصول کریں</h3><p>قیمت اور ڈیلیوری کی تصدیق کے بعد گھر پر آرڈر لیں۔</p></div>
+</div></section>
+</main>
+<footer><strong>VU Books & Handouts</strong><p>آپ کی تعلیم، ہماری سہولت!</p><p>WhatsApp / Orders: 03113667510</p><p>© VU Books & Handouts</p></footer>
+<a class="whatsapp-float" href="https://wa.me/923113667510" target="_blank" rel="noopener">WhatsApp ↗</a>
+<script>
+document.getElementById('orderForm').addEventListener('submit', function(e){
+ e.preventDefault();
+ const v=id=>document.getElementById(id).value.trim();
+ const message = `السلام علیکم! میں VU Books & Handouts کا آرڈر دینا چاہتا/چاہتی ہوں۔\n\nنام: ${v('name')}\nموبائل نمبر: ${v('phone')}\nشہر: ${v('city')}\nآرڈر کی قسم: ${v('material')}\nسبجیکٹ کوڈز: ${v('codes')}\nسبجیکٹس کی تعداد: ${v('quantity')}\nپرنٹنگ کی قسم: ${v('binding')}\nمکمل ایڈریس: ${v('address')}\nاضافی ہدایات: ${v('notes') || 'کوئی نہیں'}\n\nبراہِ کرم قیمت اور ڈیلیوری کی تفصیلات بتا دیں۔`;
+ window.open('https://wa.me/923113667510?text='+encodeURIComponent(message),'_blank');
+});
+</script>
+</body>
+</html>
